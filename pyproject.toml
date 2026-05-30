@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "costwise"
+version = "0.1.0"
+description = "AI cost optimizer — smart model routing cuts your AI API costs by 50-80%"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Jaxz714", email = "jaxz714@example.com" },
+]
+keywords = ["ai", "cost", "optimizer", "llm", "routing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "click>=8.0",
+    "httpx>=0.24",
+    "pyyaml>=6.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+costwise = "costwise.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/Jaxz714/costwise"
+Repository = "https://github.com/Jaxz714/costwise"
+
+[tool.hatch.build.targets.wheel]
+packages = ["costwise"]

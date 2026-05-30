@@ -1,0 +1,162 @@
+# Model pricing data (USD per 1M tokens)
+# Updated: 2026-05
+
+providers:
+  anthropic:
+    name: Anthropic
+    models:
+      claude-3-5-haiku:
+        display_name: "Claude 3.5 Haiku"
+        input_price: 0.80
+        output_price: 4.00
+        max_context: 200000
+        quality_score: 72
+        speed_score: 95
+        complexity_tiers: [simple, medium]
+
+      claude-sonnet-4:
+        display_name: "Claude Sonnet 4"
+        input_price: 3.00
+        output_price: 15.00
+        max_context: 200000
+        quality_score: 88
+        speed_score: 80
+        complexity_tiers: [medium, complex]
+
+      claude-opus-4:
+        display_name: "Claude Opus 4"
+        input_price: 15.00
+        output_price: 75.00
+        max_context: 200000
+        quality_score: 97
+        speed_score: 45
+        complexity_tiers: [complex]
+
+  openai:
+    name: OpenAI
+    models:
+      gpt-4o-mini:
+        display_name: "GPT-4o Mini"
+        input_price: 0.15
+        output_price: 0.60
+        max_context: 128000
+        quality_score: 70
+        speed_score: 95
+        complexity_tiers: [simple, medium]
+
+      gpt-4o:
+        display_name: "GPT-4o"
+        input_price: 2.50
+        output_price: 10.00
+        max_context: 128000
+        quality_score: 87
+        speed_score: 82
+        complexity_tiers: [medium, complex]
+
+      o3:
+        display_name: "O3"
+        input_price: 10.00
+        output_price: 40.00
+        max_context: 128000
+        quality_score: 95
+        speed_score: 35
+        complexity_tiers: [complex]
+
+      o4-mini:
+        display_name: "O4 Mini"
+        input_price: 1.10
+        output_price: 4.40
+        max_context: 128000
+        quality_score: 85
+        speed_score: 75
+        complexity_tiers: [medium, complex]
+
+  deepseek:
+    name: DeepSeek
+    models:
+      deepseek-chat:
+        display_name: "DeepSeek V3"
+        input_price: 0.27
+        output_price: 1.10
+        max_context: 64000
+        quality_score: 78
+        speed_score: 88
+        complexity_tiers: [simple, medium]
+
+      deepseek-reasoner:
+        display_name: "DeepSeek R1"
+        input_price: 0.55
+        output_price: 2.19
+        max_context: 64000
+        quality_score: 88
+        speed_score: 60
+        complexity_tiers: [medium, complex]
+
+  moonshot:
+    name: Moonshot (Kimi)
+    models:
+      kimi-k2:
+        display_name: "Kimi K2"
+        input_price: 0.60
+        output_price: 3.00
+        max_context: 128000
+        quality_score: 82
+        speed_score: 80
+        complexity_tiers: [simple, medium, complex]
+
+      moonshot-v1-8k:
+        display_name: "Moonshot V1 8K"
+        input_price: 0.12
+        output_price: 0.12
+        max_context: 8192
+        quality_score: 65
+        speed_score: 90
+        complexity_tiers: [simple]
+
+      moonshot-v1-32k:
+        display_name: "Moonshot V1 32K"
+        input_price: 0.24
+        output_price: 0.24
+        max_context: 32768
+        quality_score: 68
+        speed_score: 85
+        complexity_tiers: [simple, medium]
+
+      moonshot-v1-128k:
+        display_name: "Moonshot V1 128K"
+        input_price: 0.60
+        output_price: 0.60
+        max_context: 131072
+        quality_score: 70
+        speed_score: 75
+        complexity_tiers: [simple, medium]
+
+  google:
+    name: Google
+    models:
+      gemini-2.0-flash:
+        display_name: "Gemini 2.0 Flash"
+        input_price: 0.10
+        output_price: 0.40
+        max_context: 1048576
+        quality_score: 75
+        speed_score: 95
+        complexity_tiers: [simple, medium]
+
+      gemini-2.5-flash:
+        display_name: "Gemini 2.5 Flash"
+        input_price: 0.15
+        output_price: 0.60
+        max_context: 1048576
+        quality_score: 80
+        speed_score: 90
+        complexity_tiers: [simple, medium]
+
+      gemini-2.5-pro:
+        display_name: "Gemini 2.5 Pro"
+        input_price: 1.25
+        output_price: 10.00
+        max_context: 1048576
+        quality_score: 90
+        speed_score: 75
+        complexity_tiers: [medium, complex]

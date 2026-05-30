@@ -1,0 +1,74 @@
+# CostWise default configuration
+
+general:
+  # Default provider preference order
+  preferred_providers:
+    - deepseek
+    - moonshot
+    - google
+    - openai
+    - anthropic
+
+  # Enable smart routing (if false, always use default_model)
+  smart_routing: true
+
+  # Default model when smart routing is disabled
+  default_model: gpt-4o-mini
+
+  # Database location
+  db_path: ~/.costwise/usage.db
+
+  # Log level
+  log_level: INFO
+
+routing:
+  # Minimum quality score to consider for routing
+  min_quality_score: 60
+
+  # Weight factors for model selection (must sum to 1.0)
+  weights:
+    cost: 0.5
+    quality: 0.3
+    speed: 0.2
+
+  # Complexity-specific overrides
+  complexity_overrides:
+    simple:
+      max_price_per_1m: 1.00
+      min_quality_score: 60
+    medium:
+      max_price_per_1m: 5.00
+      min_quality_score: 70
+    complex:
+      max_price_per_1m: null  # no limit
+      min_quality_score: 80
+
+budget:
+  # Monthly budget in USD (0 = disabled)
+  monthly_limit: 0
+
+  # Daily budget in USD (0 = disabled)
+  daily_limit: 0
+
+  # Alert thresholds (percentage of budget)
+  alert_thresholds:
+    - 0.50   # 50%
+    - 0.75   # 75%
+    - 0.90   # 90%
+    - 0.95   # 95%
+
+  # Enable budget alerts
+  alerts_enabled: true
+
+dashboard:
+  # Default time period for dashboard
+  default_period: month
+
+  # Show model breakdown
+  show_model_breakdown: true
+
+  # Show provider breakdown
+  show_provider_breakdown: true
+
+  # Show daily trend
+  show_daily_trend: true
