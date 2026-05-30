@@ -96,11 +96,11 @@ Based on complexity, CostWise selects the optimal model considering:
 
 | Provider | Models |
 |----------|--------|
-| Anthropic | Claude 3.5 Haiku, Claude Sonnet 4, Claude Opus 4 |
-| OpenAI | GPT-4o Mini, GPT-4o, O3, O4 Mini |
-| DeepSeek | DeepSeek V3, DeepSeek R1 |
-| Moonshot | Kimi K2, Moonshot V1 (8K/32K/128K) |
-| Google | Gemini 2.0 Flash, Gemini 2.5 Flash, Gemini 2.5 Pro |
+| Anthropic | Claude Haiku 4.5, Claude Sonnet 4.6, Claude Opus 4.8 |
+| OpenAI | GPT-5.4 Nano, GPT-5.4 Mini, GPT-5.4, GPT-5.5 |
+| DeepSeek | DeepSeek V4 Flash, DeepSeek V4 Pro |
+| Moonshot | Kimi K2.6 |
+| Google | Gemini 3.1 Flash-Lite, Gemini 2.5 Flash, Gemini 3.5 Flash, Gemini 2.5 Pro |
 
 ## Configuration
 

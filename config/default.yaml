@@ -13,7 +13,7 @@ general:
   smart_routing: true
 
   # Default model when smart routing is disabled
-  default_model: gpt-4o-mini
+  default_model: gpt-5.4-mini
 
   # Database location
   db_path: ~/.costwise/usage.db
